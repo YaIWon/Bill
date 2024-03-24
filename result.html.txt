@@ -1,0 +1,17 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autonomous AI Project - Result</title>
+</head>
+<body>
+    <!-- Display the result or message here -->
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% elif message %}
+        <h2>{{ message }}</h2>
+    {% elif answer %}
+        <h2>{{ answer }}</h2>
+    {% endif %}
+</body>
+</html>

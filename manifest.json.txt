@@ -1,0 +1,78 @@
+{
+"manifest_version": 3,
+"name": "Autonomous AI Extension",
+"version": "3.0",
+"description": "An advanced AI system for browser integration.",
+"background": {
+"service_worker": "background.js"
+},
+"permissions": [
+"tabs",
+"http:///",
+"https:///"
+],
+"host_permissions": [
+"http:///",
+"https:///"
+],
+"action": {
+"default_icon": {
+"16": "icon-16.png",
+"48": "icon-48.png",
+"128": "icon-128.png"
+},
+"default_popup": "popup.html"
+},
+"icons": {
+"16": "icon-16.png",
+"48": "icon-48.png",
+"128": "icon-128.png"
+},
+"content_scripts": [
+{
+"matches": [
+"http:///",
+"https:///"
+],
+"js": [
+"content.js"
+]
+}
+],
+"name": "Autonomous AI Project",
+"version": "3.0",
+"description": "An advanced AI system capable of autonomous learning and utilizing various repositories.",
+"action": {
+"default_icon": {
+"16": "icon-16.png",
+"48": "icon-48.png",
+"128": "icon-128.png"
+},
+"default_popup": "popup.html"
+},
+"main": "app.py",
+"dependencies": {
+"tensorflow": "2.6.0",
+"tensorflow-quantum": "0.6.0",
+"cirq": "0.13.0",
+"flask": "<flask-version>",
+"requests": "<requests-version>"
+},
+"scripts": {
+"start": "python app.py"
+},
+"repository": {
+"url": "<repository-url>",
+"type": "<repository-type>"
+},
+"author": "Your Name",
+"license": "MIT",
+"ignore": [
+".gitignore.txt",
+"README.md",
+"requirements.txt",
+"config.py",
+"utils.py",
+"brain.py"
+]
+}

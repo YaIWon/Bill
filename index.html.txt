@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autonomous AI Project</title>
+</head>
+<body>
+    <h1>Welcome to the Autonomous AI Project</h1>
+    <form action="/process" method="POST">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url">
+        <button type="submit">Process</button>
+    </form>
+    
+    <form action="/train" method="POST">
+        <label for="url">Enter URL for Training Data:</label>
+        <input type="text" id="url" name="url">
+        <button type="submit">Train Model</button>
+    </form>
+    
+    <form action="/answer" method="POST">
+        <label for="question">Ask a Question:</label>
+        <input type="text" id="question" name="question">
+        <button type="submit">Get Answer</button>
+    </form>
+    
+    <a href="/evolve">Evolve</a>
+</body>
+</html>
